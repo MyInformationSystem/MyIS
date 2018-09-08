@@ -1,0 +1,250 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="UOS_HeaderFooter.Master.cs" Inherits="WebApplication1.Site1" %>
+
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+         <asp:ContentPlaceHolder ID="head" runat="server">
+        </asp:ContentPlaceHolder>
+  <title> University Of Sialkot</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+       <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+      <meta name="author" content="uogskt,UOGSKT,uogsialkot,uogsialkotcampus,sialkot,university"/>
+    <meta name="keyword" content="uogskt,UOGSKT,uogsialkot,uogsialkotcampus,uog,BS,MS,MBA,BBA,BShonor"/>
+    
+  
+
+     <link href="bootstrap/css/style.css" rel="stylesheet" />
+  
+    <link href="bootstrap2/css/bootstrap.css" rel="stylesheet" />
+     <link href="bootstrap2/css/font-awesome.css" rel="stylesheet" />
+
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/bootstrap/footer_css/footer1.css" rel="stylesheet" />
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".dropdown").hover(
+                function () {
+                    $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).fadeIn(600);
+                    $(this).toggleClass('open');
+                },
+                function () {
+                    $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).fadeOut(300);
+                    $(this).toggleClass('open');
+                }
+            );
+        });
+
+
+  
+$(document).ready(function(){
+  $('.dropdown-submenu a.test').hover( function(e){
+    $(this).next('ol').toggle();
+    e.stopPropagation();
+   
+  });
+});
+
+
+        function disableCtrlKeyCombination(e) {
+            //list all CTRL + key combinations you want to disable
+            var forbiddenKeys = new Array('a', 'u', 'c', 'v','s');
+            var key;
+            var isCtrl;
+            if (window.event) {
+                key = window.event.keyCode;     //IE
+                if (window.event.ctrlKey || window.event.shiftKey)
+                    isCtrl = true;
+                else
+                    isCtrl = false;
+            }
+            else {
+                key = e.which;     //firefox
+                if (e.ctrlKey)
+                    isCtrl = true;
+                else
+                    isCtrl = false;
+            }
+            //if ctrl is pressed check if other key is in forbidenKeys array
+            if (isCtrl) {
+                for (i = 0; i < forbiddenKeys.length; i++) {
+                    //case-insensitive comparation
+                    if (forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase()) {
+                        window.location.reload();
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+
+
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110064800-8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-110064800-8');
+</script>
+    <style>
+        .navbarCss ul li a{
+           color:#2b2c72;
+        }
+        .mega-dropdown-menu ul li a{
+            font-size:12px;
+        }
+    </style>
+</head><%--oncontextmenu="return false" onkeydown="return disableCtrlKeyCombination(event)"--%>
+ 
+<body>
+    <form id="form1" runat="server">
+       
+       <%-- <div class="block-menu">
+            <ul>
+                 
+               
+               
+                   <li><a href="DownloadForms">Download</a></li>
+                  <li><a href="FacultyUSKT">Faculty</a></li>
+                <li><a href="career">Career</a></li>
+               
+            </ul>
+        </div>--%>
+
+        <div class="container">
+            <div class="row" style="margin-top:15px">
+                <div class=" col-md-2 col-lg-2 col-sm-12 col-xs-12">
+                   <a href="index.aspx">
+                        <img src="indeximages/logo1.png" style="height: 8rem; width: 14rem" /></a>
+               </div>
+                <div class=" col-md-3 col-lg-3 col-sm-12 col-xs-12">
+                   
+                        <a  href="index.aspx" style="text-decoration: none;font-size:24px;font-weight:bold;color:#2b2c72">University of Gujrat</a><br />
+                        <a  href="index.aspx" style="text-decoration: none;font-size:14px;font-weight:bold;color:#2b2c72">&nbsp;&nbsp&nbsp  Sialkot Sub Campus PPP</a>
+                  
+                </div>
+                  <div class=" col-md-7 col-lg-7 col-sm-12 col-xs-12">
+                           <nav class="navbar">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+               
+                
+            </div>
+
+            <div class="collapse navbar-collapse js-navbar-collapse navbarCss">
+                
+                <ul class="nav navbar-nav navbar-right">
+                     <li><a href="About">About</a></li>
+                    
+                    <li class="dropdown">
+          <a href="#"  class="dropdown-toggle " data-toggle="dropdown">Programs<span class="caret"></span></a>
+                           <ul class="dropdown-menu" role="menu">
+                            <%--  <asp:ListView ID="ListView1" runat="server"><ItemTemplate>
+                                 <li>    <asp:LinkButton ID="LinkButton1" OnCommand="LinkButton1_Command" CommandArgument='<%#Eval("DeptCode") %>' runat="server"><%#Eval("Dept") %></asp:LinkButton></li>
+                               </ItemTemplate>
+                               </asp:ListView>--%>
+                               <li><a href="IT_Faculty.aspx">Faculty of Computing And IT</a></li>
+                               <li><a href="BusinessFaculty.aspx">Faculty of Business and Administrative Sciences</a></li>
+                               <li><a href="ScienceFaculty.aspx">Faculty of Sciences</a></li>
+                               <li><a href="SocialFaculty.aspx">Faculty of Social Sciences</a></li>
+                        </ul>
+        </li>
+                <li class="dropdown mega-dropdown">
+                        <a href="#" class="dropdown-toggle " data-toggle="dropdown">Study At USKT<span class="caret"></span></a>
+                      <div class="col-lg-12"></div>
+                    <ul class="dropdown-menu mega-dropdown-menu">
+                            <li class="col-sm-3">
+                                 <ul>
+                                      <li class="dropdown-header">Life At UOG</li>
+                                     <li><a href="gallery.aspx">Life at USKT</a></li>
+                                        <li class="divider"></li>
+                                   
+                                </ul>
+                            </li>
+                            <li class="col-sm-3">
+                                <ul>
+                                    <li class="dropdown-header">Facilities</li>
+                                    <li><a href="Transport">Transport</a></li>
+                                </ul>
+                            </li>
+                            <li class="col-sm-3">
+                                <ul>
+                                    <li class="dropdown-header">Offices</li>
+                                    <li><a href="StudentServiceCentre">Student Service Centre</a></li>
+                                    <li><a href="HumanResources">Human Resources</a></li>
+                                    <li><a href="QualityEnhancementCell">Quality Enhancement Cell</a></li>
+                              
+                                </ul>
+                            </li>
+                            <li class="col-sm-3">
+                                <ul>
+                                    <li class="dropdown-header">Departments</li>
+                              <li><a href="ComputingIT.aspx">Computing And IT</a></li>
+                               <li><a href="Business.aspx">Business and Administration</a></li>
+                               <li><a href="Sciences.aspx">Sciences</a></li>
+                               <li><a href="SocialSciences.aspx">Social Sciences</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                
+                    
+
+                     <li><a href="Contact" >Contact</a></li>
+                </ul>
+               
+            </div>
+            <!-- /.nav-collapse -->
+        </nav>
+
+
+                </div>
+        </div>
+        </div>
+
+   
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+
+    
+    </form>
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript">
+
+        function image_extension_chk() {
+            swal(" ", "Please Upload Jpg or Jpeg Images!", "warning");
+        }
+
+        function image_size_chk50() {
+            swal(" ", "Please Upload Image of Size less then 50kb!", "warning");
+        }
+
+        function fill_all_fields() {
+            swal(" ", "Please Full Fill All Fields!", "warning");
+        }
+
+        function success_alert() {
+            swal(" ", "Data Saved Successfully!", "success");
+        }
+        function error_alert() {
+            swal(" ", "Something Going Wrong Please Try Again!", "warning");
+        }
+        function error_alert11() {
+            swal(" ", "Invalid Code Please Try Again!", "warning");
+        }
+    </script>
+</body>
+</html>

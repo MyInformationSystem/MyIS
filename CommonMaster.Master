@@ -1,0 +1,188 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CommonMaster.master.cs" Inherits="FinalProject.CommonMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+ <link href="bootstrap2/css/bootstrap.css" rel="stylesheet" />
+    <link href="bootstrap2/css/style.css" rel="stylesheet" />
+    
+   
+    <link href="bootstrap2/css/font-awesome.css" rel="stylesheet" />
+      <script src="bootstrap2/js/bootstrap.js"></script>
+    <script src="jquery-3.2.1.min.js"></script>
+     <script src="bootstrap/js/bootstrap.min.js"></script>
+	
+    
+   
+    <link rel="icon" href="indeximages/UOG-Logo.jpg" />
+
+    <style>
+         .agileinfo_sign {
+		font-size: 1.6em;
+		text-align:center;
+        color:#2e2a8e;
+          
+	}
+        .fa-twitter:hover {
+            transition: 1.4s;
+            transform: rotate(360deg);
+        }
+
+        .fa-facebook:hover {
+            transition: 1.4s;
+            transform: rotate(360deg);
+
+        }
+          ul li a {
+           
+            font-weight:bold;
+           color:white;
+        }
+          .icon-bar{
+           
+            background-color:white;
+                 
+          }
+    </style>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+          
+
+        <nav class="navbar" style="background-color:#303464">
+                <div class="container">
+
+                    <div class="navbar-header">
+                        <a href="#">
+                            <img class="img-responsive " src="../indeximages/logo1.png" style="width: 110px; height: 75px"  /></a>
+
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav ">
+
+                            <li><a href="Default.aspx">HOME</a> </li>
+                            <li><a href="Faculty.aspx">Faculty</a></li>
+                            <li><a href="SSC.aspx">SSC</a></li>
+                            <li><a href="News.aspx">News</a></li>
+                            <li><a href="Academic.aspx">Academic</a></li>
+                            <li><a href="ComputingIT.aspx">Programmes</a></li>
+                            <li><a href="gallery.aspx">Campus Life</a></li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="fa fa-lock">&nbsp Login</span>
+                                     <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                         <li><a href="UOGSIS/Student_login.aspx">Student</a></li>
+                                        <li><a href="UOGSIS/Faculty_Login.aspx">Faculty</a></li>
+                                    </ul>
+                                </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+                          
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+
+
+            <div class="footer w3ls" style="background-color: #0b2717">
+                <div class="container">
+
+                    <div class="footer-main">
+                        <div class="footer-top">
+
+                            <div class="text-center col-md-3 ftr-grid fg2 mid-gd ">
+                                <a href="Default.aspx">
+                                    <img src="indeximages/logo1.png" style="width: 150px; height: 90px" /></a>
+                                <h3>University of Gujrat<br />
+                                    Sialkot Sub campus</h3>
+                                <br />
+                                <div class="fb-page" data-href="https://www.facebook.com/UOGsktcampus" data-width="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+                                    <blockquote cite="https://www.facebook.com/UOGsktcampus" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/UOGsktcampus">University of Gujrat, Sialkot Sub Campus</a></blockquote>
+                                </div>
+
+
+                            </div>
+                            <div class="text-center col-md-3 ftr-grid fg2">
+                                <h3>Social Links</h3>
+
+                                <ul>
+                                    <li><a href="https://www.facebook.com/UOGsktcampus/?fref=ts" style="color: #767575"><i class="fa fa-facebook" style="color: #2e2a8e;">&nbsp  &nbsp</i>Facebook</a></li>
+                                    <li><a href="#" style="color: #767575"><i class="fa fa-twitter" style="color: #61cfe2;">&nbsp &nbsp</i>Twitter</a></li>
+                                    <li><a href="#" style="color: #767575"><i class="fa fa-google-plus" style="color: #ba2121;">&nbsp &nbsp</i>Google</a></li>
+                                    <li><a href="#" style="color: #767575"><i class="fa fa-linkedin-square" style="color: #0077B5;">&nbsp &nbsp</i>Linkedin</a></li>
+                                </ul>
+
+
+                            </div>
+
+                            <div class="text-center col-md-3 ftr-grid fg2">
+                                <h3>Direct Links</h3>
+
+                                <div class="text-w3">
+                                    <ul>
+
+                                        <li><a href="DownloadForms.aspx" style="color: #767575">Downloads</a></li>
+                                        <li><a href="Academic.aspx" style="color: #767575">Academic</a></li>
+
+                                        <li><a href="programme.aspx" style="color: #767575">Programs</a></li>
+                                        <li><a href="gallery.aspx" style="color: #767575">Campus Life</a></li>
+                                        <li><a href="News.aspx" style="color: #767575">News</a></li>
+                                        <li><a href="SSC.aspx" style="color: #767575">SSC</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="text-center col-md-3 ftr-grid fg2">
+                                <h3>Our Faculty</h3>
+
+                                <div class="text-w3">
+                                    <ul class="text-w3">
+                                        <li><a href="IT_Faculty.aspx" style="color: #767575">Faculty of Computing & IT</a></li>
+                                        <li><a href="BusinessFaculty.aspx" style="color: #767575">Faculty of Business</a></li>
+                                        <li><a href="SocialFaculty.aspx" style="color: #767575">Faculty of Social Science</a></li>
+                                        <li><a href="ScienceFaculty.aspx" style="color: #767575">Faculty of Science</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+
+                    </div>
+                    <div class="row" style="background-color: #0b381e;">
+                        <div class="col-md-12">
+
+                            <p class="text-center" style="font-family: Arial; font-size: 15px; color: white; margin-top: 25px">
+                                &copy; Copy Rights 2017 University of Gujrat Sialkot sub Campus PPP.All Rights Reserved | Design by  <a href="https://www.facebook.com/photo.php?fbid=1896726700586567&set=a.1433970653528843.1073741828.100007477663788&type=3&theater" target="submit" style="font-size: 18px; color: #a80614">Adeel Rana</a>
+                                <br />
+
+                            </p>
+                            <div class="text-center" style="margin-top: 10px">
+                                <a href="https://www.facebook.com/photo.php?fbid=1896726700586567&set=a.1433970653528843.1073741828.100007477663788&type=3&theater"><span class=" fa fa-facebook" style="color: #2e2a8e; font-size: 2em">&nbsp &nbsp</span></a>
+                                <a href="https://twitter.com/AdeelRana1122"><span class="fa fa-twitter" style="color: #61cfe2; font-size: 2em">&nbsp &nbsp</span></a>
+                                <a href="https://plus.google.com/104147234451497061331"><span class="fa fa-google-plus-square" style="color: #ba2121; font-size: 2em">&nbsp &nbsp</span></a>
+                                <a href="#"><span class="fa fa-phone" data-toggle="popover" title="Adeel Rana Contact Number" data-content="03054982498" style="color: #1f724f; font-size: 2em"></span></a>
+
+                            </div>
+                            <br />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+           </div></form>
+</body>
+</html>

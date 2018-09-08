@@ -1,0 +1,140 @@
+﻿
+.english {
+	-moz-box-shadow: 6px 8px 7px 3px #1b8dc2;
+	-webkit-box-shadow: 6px 8px 7px 3px #1b8dc2;
+	box-shadow: 6px 8px 7px 3px #1b8dc2;
+	background-color:#4580c7;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border:4px solid #1937ab;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 79px;
+	text-decoration:none;
+	text-shadow:-1px 1px 0px #2f6627;
+}
+.english:hover {
+	background-color:#2a9bbd;
+}
+.english:active {
+	position:relative;
+	top:1px;
+}
+.Ecnomics {
+	-moz-box-shadow: 6px 8px 7px 3px #e678d0;
+	-webkit-box-shadow: 6px 8px 7px 3px #e678d0;
+	box-shadow: 6px 8px 7px 3px #e678d0;
+	background-color:#d4b4cf;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border:4px solid #cf43bf;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 73px;
+	text-decoration:none;
+	text-shadow:-1px 1px 0px #542866;
+}
+.Ecnomics:hover {
+	background-color:#d175ce;
+}
+.Ecnomics:active {
+	position:relative;
+	top:1px;
+}
+.Psycology {
+	-moz-box-shadow: 7px 9px 10px 3px #73993d;
+	-webkit-box-shadow: 7px 9px 10px 3px #73993d;
+	box-shadow: 7px 9px 10px 3px #73993d;
+	background-color:#669e59;
+	border:4px solid #50752d;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 73px;
+	text-decoration:none;
+	text-shadow:-1px 1px 0px #336629;
+}
+.Psycology:hover {
+	background-color:#425e23;
+}
+.Psycology:active {
+	position:relative;
+	top:1px;
+}
+.MScom {
+	-moz-box-shadow: 7px 9px 13px 5px #b5aa36;
+	-webkit-box-shadow: 7px 9px 13px 5px #b5aa36;
+	box-shadow: 7px 9px 13px 5px #b5aa36;
+	background-color:#d1c647;
+	border:4px solid #e0d83e;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 33px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #665e2a;
+}
+.MScom:hover {
+	background-color:#807a33;
+}
+.MScom:active {
+	position:relative;
+	top:1px;
+}
+
+.MSIR {
+	-moz-box-shadow: 7px 9px 13px 5px #d4315a;
+	-webkit-box-shadow: 7px 9px 13px 5px #d4315a;
+	box-shadow: 7px 9px 13px 5px #d4315a;
+	background-color:#d13636;
+	border:4px solid #b82348;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:14px 31px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #665e2a;
+}
+.MSIR:hover {
+	background-color:#d10830;
+}
+.MSIR:active {
+	position:relative;
+	top:1px;
+}
+.BScom {
+	-moz-box-shadow: 7px 9px 13px 5px #b5aa36;
+	-webkit-box-shadow: 7px 9px 13px 5px #b5aa36;
+	box-shadow: 7px 9px 13px 5px #b5aa36;
+	background-color:#d1c647;
+	border:4px solid #e0d83e;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 30px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #665e2a;
+}
+.BScom:hover {
+	background-color:#807a33;
+}
+.BScom:active {
+	position:relative;
+	top:1px;
+}
